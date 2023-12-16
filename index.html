@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax effect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="js/app.js" defer></script>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="container">
+      <header class="head">
+        <div class="layers">
+          <div class="layer__head">
+            <div class="layer__caption">Welcom to parallax</div>
+            <div class="layer__title">Fairy forest</div>
+          </div>
+          <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+          <div class="layer layers__midle" style="background-image: url(img/layer-middle.png);"></div>
+          <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+        </div>
+      </header>
     
+      <article class="article" style="background-image: url(img/dungeon.jpg);">
+        <div class="artile__content">
+          <h1 class="article__header">To be continued</h1>
+          <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores unde odio dicta officia id ab quaerat eum similique? Ducimus autem dignissimos maxime consequuntur porro saepe ipsam nesciunt voluptas error corrupti.</p>
+        </div>
+        <div class="copy">© WebDecign Master</div>
+      </article>
+    </div>
+  </div>
 </body>
 </html>
